@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Form, Input } from "antd";
+import { Button, Form, Input, notification } from "antd";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,9 +23,13 @@ function Login() {
       localStorage.setItem("token", get(result, "data.message"));
       Cookies.set("token", get(result, "data.message"));
       setData(get(result, "data.message"));
+      notification.success({message:"lets continue"})
       fetchData();
     } catch (err) {
       console.log(err);
+      if(err.response.data.message==="User not found"){
+        notification.error({message:err.response.data.message})
+      }
     }
   };
 
