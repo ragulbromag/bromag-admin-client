@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,.ant-form,.ant-form-item,:where(.css-dev-only-do-not-override-2i2tap)[class^="ant-col"], :where(.css-dev-only-do-not-override-2i2tap)[class*=" ant-col"]{
+    font-family: 'Comfortaa', sans-serif !important;
+}
