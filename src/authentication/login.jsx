@@ -52,14 +52,14 @@ function Login() {
   }, [navigate, data]);
 
   return (
-    <div className="w-screen h-screen bg-black flex items-center justify-between px-28">
-      <div className="text-white border-r-2 h-[70vh] border-slate-400 flex items-center justify-center  w-[50%]">
+    <div className="w-screen h-screen bg-black flex items-center justify-between ">
+      <div className="text-white border-r-2 h-[70vh] border-slate-400 flex items-center justify-center  w-[45%]">
         Logo
       </div>
 
-      <div>
+      <div className="pr-32">
         <Form
-          className="md:w-[35vw] lg:w-[30vw] xl:w-[24vw] rounded-md bg-white/10 shadow-md backdrop-blur-sm flex flex-col  px-4 gap-4 py-5 !text-white"
+          className="md:w-[35vw] lg:w-[30vw] xl:w-[24vw] rounded-md bg-white/20 shadow-md backdrop-blur-sm flex flex-col  px-4 gap-4 py-5 !text-white"
           layout="vertical"
           onFinish={handleFinish}
         >
