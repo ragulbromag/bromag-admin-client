@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { changeUserValues } from "../redux/adminUserSlice";
-import { isEmpty, get } from "lodash";
+import {  get } from "lodash";
 
 function Sidenavbar() {
   const navigate = useNavigate();
